@@ -1,69 +1,6 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-
-    <title>SARU Cervejas</title>
-</head>
-
-<body>
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-3">
-                    <img class="img-thumbnail" src="https://via.placeholder.com/150" alt="Main Logo">
-                </div>
-                <div class="col-6">
-                    <form id="search" class="form-inline" action="search">
-                        <input class="form-control" type="text" name="search" placeholder="Buscar">
-                        <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
-                    </form>
-                </div>
-                <div class="col-3">
-                    <div class="header-right">
-                        <div class="row">
-                            <a class="social-network pr-3" href="facebook.com"><i class="fab fa-facebook-square"></i></a>
-                            <a class="social-network pr-3" href="twitter.com"><i class="fab fa-twitter-square"></i></a>
-                            <a class="social-network" href="instagram.com"><i class="fab fa-instagram-square"></i></a>
-                        </div>
-                        <div class="row justify-content-center">
-                            <a href="#">Login/Cadastrar</a>
-                        </div>
-                        <div class="row cart-icon justify-content-center">
-                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav mx-auto">
-                        <a class="nav-item nav-link active" href="#">Promoções <span
-                                class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link" href="#">Estilos</a>
-                        <a class="nav-item nav-link" href="#">Fabricantes</a>
-                        <a class="nav-item nav-link" href="#">Países</a>
-                        <a class="nav-item nav-link" href="#">Cervejarias</a>
-                        <a class="nav-item nav-link" href="#">Kits</a>
-                        <a class="nav-item nav-link" href="#">Copos & Taças</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
+<?php
+include_once 'header.php'
+?>
     <main>
         <div class="container mt-3">
             <div class="row">
@@ -81,7 +18,8 @@
                           <input type="checkbox" class="form-check-input" id="exampleCheck1">
                           <label class="form-check-label" for="exampleCheck1">Lembrar de mim</label>
                         </div>
-                        <button type="submit" class="btn btn-primary">Entrar</button>
+                        <a href="user_purchases.php" class="btn btn-primary">Entrar</a>
+                        <!-- <button type="submit" class="btn btn-primary">Entrar</button> -->
                       </form>
                 </div>
                 <div class="col-9">
@@ -169,58 +107,14 @@
                             </label>
                           </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+                        <a href="user_purchases.php" class="btn btn-primary">Cadastrar</a>
+                        <!-- <button type="submit" class="btn btn-primary">Cadastrar</button> -->
                     </form>
                 </div>
             </div>
         </div>
     </main>
     
-    <footer>
-        <div>
-            Newsletter
-            <span>
-                Facebook
-                Twitter
-                Instagram
-            </span>
-        </div>
-        <div>
-            Fale conosco
-            email
-            telefone
-            horário
-        </div>
-        <div>
-            Central de atendimento
-            <nav>
-                <a href="#">FAQ</a>
-                <a href="#">Sobre nós</a>
-                <a href="#">Trocas e devoluções</a>
-                <a href="#">Política de frete</a>
-                <a href="#">Política de privacidade</a>
-                <a href="#">Termos e condições de usos</a>
-            </nav>
-        </div>
-        <div>
-            Formas de pagamento
-        </div>
-        <div>
-            Certificados/Prêmios
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
-    <script src="https://kit.fontawesome.com/d727604b14.js" crossorigin="anonymous"></script>
-</body>
-
-</html>
+<?php
+include_once 'footer.php'
+?>
