@@ -18,10 +18,12 @@
 .social-network {
     font-size: 2.5rem;
     padding-left: .5rem;
+    color: #ffc107;
 }
 
 .cart-icon {
     font-size: 3rem;
+    color: #ffc107 !important;
 }
 
 header nav {
@@ -31,4 +33,8 @@ header nav {
 .navbar-expand-lg .navbar-nav .nav-link {
     font-weight: bold;
     padding-right: 2rem;
+}
+
+footer .list-group-item {
+    border: none;
 }

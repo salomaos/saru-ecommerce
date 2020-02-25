@@ -18,7 +18,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-3">
-                    <img class="img-thumbnail" src="https://via.placeholder.com/150" alt="Main Logo">
+                    <a href="index.php">
+                        <img class="w-100 pt-3" src="img/SARU.png" alt="Main Logo">
+                    </a>
                 </div>
                 <div class="col-6">
                     <form id="search" class="form-inline" action="search">
@@ -36,8 +38,8 @@
                         <div class="row justify-content-center">
                             <a href="signup_singin.php">Login/Cadastrar</a>
                         </div>
-                        <div class="row cart-icon justify-content-center">
-                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        <div class="row justify-content-center">
+                            <a class="cart-icon" href="#"><i class="fas fa-shopping-cart"></i></a>
                         </div>
                     </div>
                 </div>
