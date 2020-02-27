@@ -38,3 +38,12 @@ header nav {
 footer .list-group-item {
     border: none;
 }
+
+.list-group-item.active {
+    background-color: grey;
+    border-color: grey;
+}
+
+.cart_product_info {
+    font-size: 10px;
+}

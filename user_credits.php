@@ -9,7 +9,7 @@
             <div class="col-9">
                 <h2>Meus Créditos/Vale Trocas</h2>
                 <div class="alert alert-danger" role="alert">
-                    Vocẽ não fez nenhum crédito ou vale troca. 
+                    Vocẽ não tem nenhum crédito ou vale troca. 
                 </div>
             </div>
         </div>

@@ -1,16 +1,16 @@
 <footer class="mt-5 mb-5">
     <div class="container">
-        <div class="row bg-warning pt-3 justify-content-center rounded">
-            <p class="text-white bg-dark p-2 rounded">Promoções, descontos, informações e novidades em primeira mão. Cadastre-se em nossa newsletter!</p>
+        <div class="pt-4 pl-5 pr-5 bg-warning pt-3 justify-content-center rounded">
+            <p class="text-white bg-dark p-2 rounded text-center">Promoções, descontos, informações e novidades em primeira mão. Cadastre-se em nossa newsletter!</p>
             <form action="#">
                 <div class="form-row">
-                    <div class="form-group col-4">
-                        <input class="form-control" type="text" name="name" id="name" value="Nome Completo">
+                    <div class="form-group col-5">
+                        <input class="form-control" type="text" name="name" id="name" placeholder="Nome Completo">
                     </div>
-                    <div class="form-group col-4">
-                        <input class="form-control" type="text" name="email" id="email" value="E-mail">
+                    <div class="form-group col-5">
+                        <input class="form-control" type="email" name="email" id="email" placeholder="E-mail">
                     </div>
-                    <div class="form-group col-4">
+                    <div class="form-group col-2">
                         <button class="btn btn-outline-dark btn-block" type="submit">Cadastrar</button>
                     </div>
                 </div>

@@ -10,7 +10,7 @@
                         <img class="rounded w-100 img-thumbnail" src="img/beers/586135.png" alt="Red Stripe">
                     </div>
                     <div class="col-9">
-                        <img src="img/beers/586135.png" alt="Cerveja" style="max-width: 450px;">
+                        <img class="w-100" src="img/beers/586135.png" alt="Cerveja">
                     </div>
                 </div>
             </div>
