@@ -45,5 +45,5 @@
                 <h5 class="pt-3">R$ 97,92</h5>
             </div>
         </div>
-        <a class="btn btn-success btn-block mt-2" href="#">FINALIZAR COMPRA</a>
+        <a class="btn btn-success btn-block mt-2" href="order_finished.php">FINALIZAR COMPRA</a>
 </div>
