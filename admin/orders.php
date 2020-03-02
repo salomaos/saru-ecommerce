@@ -2,7 +2,7 @@
 
     <h2 class="mt-5">Pedidos</h2>
     <table class="table table-hover mt-4 text-center border-bottom">
-        <thead>
+        <thead class="thead-dark">
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">Status</th>

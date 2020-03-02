@@ -19,7 +19,7 @@
             <div class="row">
                 <div class="col-3">
                     <a href="index.php">
-                        <img class="w-100 pt-3" src="img/SARU.png" alt="Main Logo">
+                        <img class="w-75 pt-3" src="img/SARU.png" alt="Main Logo">
                     </a>
                 </div>
                 <div class="col-6">
@@ -39,7 +39,7 @@
                             <a href="signup_singin.php">Login/Cadastrar</a>
                         </div>
                         <div class="row justify-content-center">
-                            <a class="cart-icon" href="#"><i class="fas fa-shopping-cart"></i></a>
+                            <a class="cart-icon" href="cart.php"><i class="fas fa-shopping-cart"></i></a>
                         </div>
                     </div>
                 </div>

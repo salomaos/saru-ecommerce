@@ -8,4 +8,5 @@
 <h5 class="mt-3">Cadastro</h5>
 <div class="list-group">
     <a href="user_data.php" class="list-group-item list-group-item-action">Dados Pessoais</a>
+    <a href="user_adresses.php" class="list-group-item list-group-item-action">Endereços</a>
 </div>

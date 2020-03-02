@@ -49,48 +49,6 @@
                             <input type="text" class="form-control" id="inputAddress2" placeholder="Telefone Secundário*">
                         </div>
                     </div>
-                    <h4>Endereço</h4>
-                    <div class="form-row">
-                        <div class="form-group col-2">
-                            <input type="text" class="form-control" id="inputCity" placeholder="CEP*">
-                        </div>
-                        <div class="form-group col-8">
-                            <input type="text" class="form-control" id="inputCity" placeholder="Rua*">
-                        </div>
-                        <div class="form-group col-2">
-                            <input type="text" class="form-control" id="inputCity" placeholder="Número*">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-6">
-                            <input type="text" class="form-control" id="inputCity" placeholder="Complemento">
-                        </div>
-                        <div class="form-group col-6">
-                            <input type="text" class="form-control" id="inputCity" placeholder="Bairro*">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-6">
-                            <input type="text" class="form-control" id="inputZip" placeholder="Cidade*">
-                        </div>
-                        <div class="form-group col-6">
-                            <select id="inputState" class="form-control">
-                                <option selected>Estado*</option>
-                                <option>SP</option>
-                                <option>RJ</option>
-                                <option>BA</option>
-                                <option>AM</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                            <label class="form-check-label" for="gridCheck">
-                                Quero receber novidades da SARU
-                            </label>
-                        </div>
-                    </div>
                     <a href="user_account.php" class="btn btn-primary">Salvar</a>
                     <!-- <button type="submit" class="btn btn-primary">Cadastrar</button> -->
                 </form>
