@@ -13,6 +13,17 @@
         </div>
     </div>
     <hr>
+    <form class="form-inline">
+        <h5 class="mr-3">Gerar cupom</h5>
+        <label class="sr-only" for="inlineFormInputName2">Name</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Descrição">
+
+        <label class="sr-only" for="inlineFormInputName2">Name</label>
+        <input type="number" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Valor">
+
+        <button type="submit" class="btn btn-warning mb-2">Gerar</button>
+    </form>
+    <hr>
     <div class="row mt-3">
         <div class="col-2">
             <h4>Meus Dados</h4>
@@ -67,8 +78,8 @@
                         </label>
                     </div>
                 </div>
-                <a href="user_account.php" class="btn btn-primary">Salvar Alterações</a>
-                <!-- <button type="submit" class="btn btn-primary">Cadastrar</button> -->
+                <a href="user_account.php" class="btn btn-warning">Salvar Alterações</a>
+                <!-- <button type="submit" class="btn btn-warning">Cadastrar</button> -->
             </form>
         </div>
 
@@ -118,7 +129,7 @@
                             </select>
                         </div>
                     </div>
-                    <a href="user_account.php" class="btn btn-primary">Salvar Alterações</a>
+                    <a href="user_account.php" class="btn btn-warning">Salvar Alterações</a>
                 </form>
             </div>
             <hr>
@@ -159,7 +170,7 @@
                             </select>
                         </div>
                     </div>
-                    <a href="user_account.php" class="btn btn-primary">Salvar Alterações</a>
+                    <a href="user_account.php" class="btn btn-warning">Salvar Alterações</a>
                 </form>
             </div>
         </div>

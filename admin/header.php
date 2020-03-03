@@ -47,10 +47,10 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Funcionários</a>
+                        <a class="nav-link" href="employees.php">Funcionários</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Logs</a>
+                        <a class="nav-link" href="database_logs.php">Logs</a>
                     </li>
 
                 </ul>
