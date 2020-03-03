@@ -31,7 +31,7 @@
                 <td class="align-middle">Inativo</td>
                 <td class="align-middle">0</td>
                 <td class="align-middle">
-                    <a href="client_details.php" class="btn btn-secondary"><i class="fas fa-eye"></i></a>
+                    <a href="new_product.php" class="btn btn-secondary"><i class="fas fa-eye"></i></a>
                 </td>
             </tr>
             <tr>
@@ -49,7 +49,7 @@
                 <td class="align-middle">Ativo</td>
                 <td class="align-middle">200</td>
                 <td class="align-middle">
-                    <a href="client_details.php" class="btn btn-secondary"><i class="fas fa-eye"></i></a>
+                    <a href="new_product.php" class="btn btn-secondary"><i class="fas fa-eye"></i></a>
                 </td>
             </tr>  
         </tbody>

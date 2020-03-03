@@ -28,6 +28,8 @@
                                 <option>Enviado</option>
                                 <option>Entregue</option>
                                 <option>Cancelado</option>
+                                <option disabled>───────────────</option>
+                                <option>Pedido de devolução</option>
                                 <option>Devolvido</option>
                                 <option>Em análise</option>
                                 <option>Valor devolvido</option>

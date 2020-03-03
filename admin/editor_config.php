@@ -75,10 +75,10 @@
         shortcut: "CMD+SHIFT+L"
       },
 
-      checklist: {
-        class: Checklist,
-        inlineToolbar: true
-      },
+      // checklist: {
+      //   class: Checklist,
+      //   inlineToolbar: true
+      // },
 
       quote: {
         class: Quote,
@@ -92,22 +92,22 @@
 
       warning: Warning,
 
-      marker: {
-        class: Marker,
-        shortcut: "CMD+SHIFT+M"
-      },
+      // marker: {
+      //   class: Marker,
+      //   shortcut: "CMD+SHIFT+M"
+      // },
 
-      code: {
-        class: CodeTool,
-        shortcut: "CMD+SHIFT+C"
-      },
+      // code: {
+      //   class: CodeTool,
+      //   shortcut: "CMD+SHIFT+C"
+      // },
 
       delimiter: Delimiter,
 
-      inlineCode: {
-        class: InlineCode,
-        shortcut: "CMD+SHIFT+C"
-      },
+      // inlineCode: {
+      //   class: InlineCode,
+      //   shortcut: "CMD+SHIFT+C"
+      // },
 
       linkTool: LinkTool,
 

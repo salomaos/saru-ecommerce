@@ -1,8 +1,16 @@
 <?php include_once 'header.php'; ?>
 
 <div class="container mb-5">
-    <div class="row mt-3">
-        <h1>Salomão Santana do Nascimento</h1>
+    <div class="row mt-3 align-items-center">
+        <div class="col-8">
+            <h1>Salomão Santana do Nascimento</h1>
+        </div>
+        <div class="col-2">
+            <a class="btn btn-warning float-right" href="index.php">Ver pedidos</a>
+        </div>
+        <div class="col-2">
+            <a class="btn btn-danger" href="#">Desativar cliente</a>
+        </div>
     </div>
     <hr>
     <div class="row mt-3">
