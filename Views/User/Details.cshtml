@@ -1,0 +1,35 @@
+@model saru_ecommerce.Models.User
+
+@{
+    ViewData["Title"] = "Detalhes do Usuário";
+}
+
+<h1>@Html.DisplayFor(model => model.Name)</h1>
+<hr>
+<div>
+    <dl class="row">
+        <dt class="col-3">@Html.DisplayNameFor(model => model.Id)</dt>
+        <dd class="col-9">@Html.DisplayFor(model => model.Id)</dd>
+
+        <dt class="col-3">@Html.DisplayNameFor(model => model.Email)</dt>
+        <dd class="col-9">@Html.DisplayFor(model => model.Email)</dd>
+
+        <dt class="col-3">@Html.DisplayNameFor(model => model.Cpf)</dt>
+        <dd class="col-9">@Html.DisplayFor(model => model.Cpf)</dd>
+
+        <dt class="col-3">@Html.DisplayNameFor(model => model.BirthDate)</dt>
+        <dd class="col-9">@Html.DisplayFor(model => model.BirthDate)</dd>
+
+        <dt class="col-3">@Html.DisplayNameFor(model => model.Gender)</dt>
+        <dd class="col-9">@Html.DisplayFor(model => model.Gender)</dd>
+
+        <dt class="col-3">@Html.DisplayNameFor(model => model.Password)</dt>
+        <dd class="col-9">@Html.DisplayFor(model => model.Password)</dd>
+
+        <dt class="col-3">@Html.DisplayNameFor(model => model.PhoneNumberPrimary)</dt>
+        <dd class="col-9">@Html.DisplayFor(model => model.PhoneNumberPrimary)</dd>
+
+        <dt class="col-3">@Html.DisplayNameFor(model => model.PhoneNumberSecondary)</dt>
+        <dd class="col-9">@Html.DisplayFor(model => model.PhoneNumberSecondary)</dd>
+    </dl>
+</div>
