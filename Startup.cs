@@ -27,11 +27,10 @@ namespace saru_ecommerce
         {
             var connection = Configuration["DbConections:SaruData"];
 
-            services.AddDbContext<UserContext>(options => options.UseMySql(connection));
+            services.AddDbContext<SaruContext>(options => options.UseMySql(connection));
 
             services.AddControllersWithViews();
         }
-
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {

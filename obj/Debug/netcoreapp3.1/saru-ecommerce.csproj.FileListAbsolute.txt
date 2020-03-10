@@ -133,3 +133,6 @@
 /home/salomaos/repos/LES/saru-ecommerce/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
 /home/salomaos/repos/LES/saru-ecommerce/obj/Debug/netcoreapp3.1/Razor/Views/User/Index.cshtml.g.cs
 /home/salomaos/repos/LES/saru-ecommerce/obj/Debug/netcoreapp3.1/Razor/Views/User/Details.cshtml.g.cs
+/home/salomaos/repos/LES/saru-ecommerce/obj/Debug/netcoreapp3.1/Razor/Views/User/Edit.cshtml.g.cs
+/home/salomaos/repos/LES/saru-ecommerce/obj/Debug/netcoreapp3.1/Razor/Views/User/Create.cshtml.g.cs
+/home/salomaos/repos/LES/saru-ecommerce/obj/Debug/netcoreapp3.1/Razor/Views/User/Delete.cshtml.g.cs

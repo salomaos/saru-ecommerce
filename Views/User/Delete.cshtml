@@ -1,0 +1,39 @@
+@model saru_ecommerce.Models.User
+
+@{
+    ViewData["Title"] = "Excluir Usuário";
+}
+
+<h1>@Html.DisplayFor(model => model.Name)</h1>
+
+
+
+<dl class="row">
+    <dt class = "col-sm-2">
+        @Html.DisplayNameFor(model => model.Email)
+    </dt>
+    <dd class = "col-sm-10">
+        @Html.DisplayFor(model => model.Cpf)
+    </dd>
+    <dt class = "col-sm-2">
+        @Html.DisplayNameFor(model => model.BirthDate)
+    </dt>
+    <dd class = "col-sm-10">
+        @Html.DisplayFor(model => model.Gender)
+    </dd>
+    <dt class = "col-sm-2">
+        @Html.DisplayNameFor(model => model.Password)
+    </dt>
+    <dd class = "col-sm-10">
+        @Html.DisplayFor(model => model.PhoneNumberPrimary)
+    </dd>
+    <dt class = "col-sm-2">
+        @Html.DisplayNameFor(model => model.PhoneNumberSecondary)
+    </dt>
+</dl>
+
+<form asp-action="Delete">
+    <input type="hidden" asp-for="UserId">
+    <input type="submit" value="Excluir" class="btn btn-danger">
+    <a asp-action="Index">Voltar</a>
+</form>

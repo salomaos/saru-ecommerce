@@ -20521,6 +20521,11 @@
   "RootNamespace": "saru_ecommerce",
   "Documents": [
     {
+      "FilePath": "/home/salomaos/repos/LES/saru-ecommerce/Views/User/Delete.cshtml",
+      "TargetPath": "Views\\User\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/salomaos/repos/LES/saru-ecommerce/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
@@ -20528,6 +20533,11 @@
     {
       "FilePath": "/home/salomaos/repos/LES/saru-ecommerce/Views/User/Details.cshtml",
       "TargetPath": "Views\\User\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/salomaos/repos/LES/saru-ecommerce/Views/User/Create.cshtml",
+      "TargetPath": "Views\\User\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20558,6 +20568,11 @@
     {
       "FilePath": "/home/salomaos/repos/LES/saru-ecommerce/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/salomaos/repos/LES/saru-ecommerce/Views/User/Edit.cshtml",
+      "TargetPath": "Views\\User\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
