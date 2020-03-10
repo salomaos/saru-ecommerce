@@ -33,8 +33,6 @@ namespace saru_ecommerce.Controllers
         {
             return View(await _context.Users.FindAsync(id));
         }
-
-        [Route("usuario/novo")]
         public IActionResult Create()
         {
             return View();
@@ -51,7 +49,8 @@ namespace saru_ecommerce.Controllers
                 return RedirectToAction("Index", new { id = userId });
             }
             return View(user);
-        }
+        }       
+
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -113,7 +112,7 @@ namespace saru_ecommerce.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Index), new {id = user.UserId});
             }
             return View(user);
         }

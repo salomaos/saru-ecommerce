@@ -42,8 +42,8 @@
             <th>@Html.DisplayFor(model => model.PhoneNumberSecondary)</th>
             <th>
                 <a asp-action="Edit" asp-route-id="@Model.UserId">Editar</a> |
-                <a asp-action="Details" asp-route-id="UserId">Detalhes</a> |
-                <a asp-action="Delete" asp-route-id="UserId">Excluir</a>
+                <a asp-controller="UserAdresses" asp-action="Create" asp-route-id="@Model.UserId">Adicionar Endereço</a> |
+                @* <a asp-action="Delete" asp-route-id="UserId">Excluir</a> *@
             </th>
         </tr>
         

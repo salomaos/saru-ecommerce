@@ -1,4 +1,4 @@
-@model saru_ecommerce.Models.User
+@model saru_ecommerce.Models.UserAddress
 
 @{
     ViewData["Title"] = "Create";
@@ -31,43 +31,43 @@
                 <div class="form-row">
                     <div class="text-danger" asp-validation-summary="ModelOnly"></div>
                     <div class="form-group">
-                        <label asp-for="Name" class="control-label"></label>
-                        <input asp-for="Name" class="form-control">
+                        <label asp-for="Description" class="control-label"></label>
+                        <input asp-for="Description" class="form-control">
                         <span class="text-danger"></span>
                     </div>
                     <div class="form-group">
-                        <label asp-for="Email" class="control-label"></label>
-                        <input asp-for="Email" class="form-control">
+                        <label asp-for="Address" class="control-label"></label>
+                        <input asp-for="Address" class="form-control">
                         <span class="text-danger"></span>
                     </div>
                     <div class="form-group">
-                        <label asp-for="Cpf" class="control-label"></label>
-                        <input asp-for="Cpf" class="form-control">
+                        <label asp-for="Number" class="control-label"></label>
+                        <input asp-for="Number" class="form-control">
                         <span class="text-danger"></span>
                     </div>
                     <div class="form-group">
-                        <label asp-for="BirthDate" class="control-label"></label>
-                        <input asp-for="BirthDate" class="form-control">
+                        <label asp-for="Neighborhood" class="control-label"></label>
+                        <input asp-for="Neighborhood" class="form-control">
                         <span class="text-danger"></span>
                     </div>
                     <div class="form-group">
-                        <label asp-for="Gender" class="control-label"></label>
-                        <input asp-for="Gender" class="form-control">
+                        <label asp-for="City" class="control-label"></label>
+                        <input asp-for="City" class="form-control">
                         <span class="text-danger"></span>
                     </div>
                     <div class="form-group">
-                        <label asp-for="Password" class="control-label"></label>
-                        <input asp-for="Password" class="form-control">
+                        <label asp-for="State" class="control-label"></label>
+                        <input asp-for="State" class="form-control">
                         <span class="text-danger"></span>
                     </div>
                     <div class="form-group">
-                        <label asp-for="PhoneNumberPrimary" class="control-label"></label>
-                        <input asp-for="PhoneNumberPrimary" class="form-control">
+                        <label asp-for="Complement" class="control-label"></label>
+                        <input asp-for="Complement" class="form-control">
                         <span class="text-danger"></span>
                     </div>
                     <div class="form-group">
-                        <label asp-for="PhoneNumberSecondary" class="control-label"></label>
-                        <input asp-for="PhoneNumberSecondary" class="form-control">
+                        <label asp-for="UserId" class="control-label" hidden></label>
+                        <input asp-for="UserId" class="form-control" value="@ViewBag.UserId" hidden>
                         <span class="text-danger"></span>
                     </div>              
                     <div class="form-group">

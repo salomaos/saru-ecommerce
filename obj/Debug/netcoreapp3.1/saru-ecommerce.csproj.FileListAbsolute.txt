@@ -136,3 +136,4 @@
 /home/salomaos/repos/LES/saru-ecommerce/obj/Debug/netcoreapp3.1/Razor/Views/User/Edit.cshtml.g.cs
 /home/salomaos/repos/LES/saru-ecommerce/obj/Debug/netcoreapp3.1/Razor/Views/User/Create.cshtml.g.cs
 /home/salomaos/repos/LES/saru-ecommerce/obj/Debug/netcoreapp3.1/Razor/Views/User/Delete.cshtml.g.cs
+/home/salomaos/repos/LES/saru-ecommerce/obj/Debug/netcoreapp3.1/Razor/Views/UserAdresses/Create.cshtml.g.cs
