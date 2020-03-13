@@ -8,13 +8,6 @@
 
 <p><a asp-action="Create">Novo Usuário</a></p>
 
-<form asp-controller="User" asp-action="Index" method="GET">
-    <p>
-        Name: <input type="text" name="SearchString">
-        <input type="submit" value="Filtrar">
-    </p>
-</form>
-
 <table class="table">
     <thead>
         <th>@Html.DisplayNameFor(model => model.UserId)</th>

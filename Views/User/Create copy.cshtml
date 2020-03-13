@@ -30,128 +30,85 @@
             <form asp-action="Create" id="signup-form">
                 <div class="form-row">
                     <div class="text-danger" asp-validation-summary="ModelOnly"></div>
-                    <div class="form-group col-6">
+                    <div class="form-group">
+                        <label asp-for="user.Name" class="control-label"></label>
+                        <input asp-for="user.Name" class="form-control">
+                        <span class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
                         <label asp-for="user.Email" class="control-label"></label>
                         <input asp-for="user.Email" class="form-control">
                         <span class="text-danger"></span>
                     </div>
-                    <div class="form-group col-6">
+                    <div class="form-group">
                         <label asp-for="user.Cpf" class="control-label"></label>
                         <input asp-for="user.Cpf" class="form-control">
                         <span class="text-danger"></span>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label asp-for="user.Name" class="control-label"></label>
-                    <input asp-for="user.Name" class="form-control">
-                    <span class="text-danger"></span>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-6">
+                    <div class="form-group">
                         <label asp-for="user.BirthDate" class="control-label"></label>
                         <input asp-for="user.BirthDate" class="form-control">
                         <span class="text-danger"></span>
                     </div>
-                    <div class="form-group col-6">
+                    <div class="form-group">
                         <label asp-for="user.Gender" class="control-label"></label>
-                        <select asp-for="user.Gender" class="form-control">
-                            <option selected>Selecione</option>
-                            <option>Masculino</option>
-                            <option>Feminino</option>
-                        </select>
+                        <input asp-for="user.Gender" class="form-control">
                         <span class="text-danger"></span>
                     </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-6">
+                    <div class="form-group">
                         <label asp-for="user.Password" class="control-label"></label>
                         <input asp-for="user.Password" class="form-control">
                         <span class="text-danger"></span>
                     </div>
-                    <div class="form-group col-6">
-                        ARRUMAR
-                        @* <label asp-for="user.Password" class="control-label"></label>
-                        <input asp-for="user.Password" class="form-control">
-                        <span class="text-danger"></span> *@
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-6">
+                    <div class="form-group">
                         <label asp-for="user.PhoneNumberPrimary" class="control-label"></label>
                         <input asp-for="user.PhoneNumberPrimary" class="form-control">
                         <span class="text-danger"></span>
                     </div>
-                    <div class="form-group col-6">
+                    <div class="form-group">
                         <label asp-for="user.PhoneNumberSecondary" class="control-label"></label>
                         <input asp-for="user.PhoneNumberSecondary" class="form-control">
                         <span class="text-danger"></span>
                     </div>
-                </div>
-                <h4>Endereço</h4>
-                <div class="form-row">
-                    <div class="form-group col-12">
+                    <div class="form-group">
                         <label asp-for="address.Description" class="control-label"></label>
                         <input asp-for="address.Description" class="form-control">
                         <span class="text-danger"></span>
                     </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-2">
-                        <label asp-for="address.ZipCode" class="control-label"></label>
-                        <input asp-for="address.ZipCode" class="form-control">
-                        <span class="text-danger"></span>
-                    </div>
-                    <div class="form-group col-8">
+                    <div class="form-group">
                         <label asp-for="address.Address" class="control-label"></label>
                         <input asp-for="address.Address" class="form-control">
                         <span class="text-danger"></span>
                     </div>
-                    <div class="form-group col-2">
+                    <div class="form-group">
                         <label asp-for="address.Number" class="control-label"></label>
                         <input asp-for="address.Number" class="form-control">
                         <span class="text-danger"></span>
-                    </div>                          
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-6">
-                        <label asp-for="address.Complement" class="control-label"></label>
-                        <input asp-for="address.Complement" class="form-control">
-                        <span class="text-danger"></span>
                     </div>
-                    <div class="form-group col-6">
+                    <div class="form-group">
                         <label asp-for="address.Neighborhood" class="control-label"></label>
                         <input asp-for="address.Neighborhood" class="form-control">
                         <span class="text-danger"></span>
                     </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-6">
+                    <div class="form-group">
                         <label asp-for="address.City" class="control-label"></label>
                         <input asp-for="address.City" class="form-control">
                         <span class="text-danger"></span>
                     </div>
-                    <div class="form-group col-6">
+                    <div class="form-group">
                         <label asp-for="address.State" class="control-label"></label>
-                        <select asp-for="address.State" id="inputState" class="form-control">
-                            <option selected>Estado*</option>
-                            <option>SP</option>
-                            <option>RJ</option>
-                            <option>BA</option>
-                            <option>AM</option>
-                        </select>
+                        <input asp-for="address.State" class="form-control">
                         <span class="text-danger"></span>
                     </div>
-                </div>
-                <div class="form-group">
-                    <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                        Quero receber novidades da SARU
-                    </label>
+                    <div class="form-group">
+                        <label asp-for="address.Complement" class="control-label"></label>
+                        <input asp-for="address.Complement" class="form-control">
+                        <span class="text-danger"></span>
+                    </div>      
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-warning" value="Salvar">
                     </div>
-                </div>
-                <div class="form-group">
-                    <input type="submit" class="btn btn-warning" value="Salvar">
+                  
                 </div>
             </form>
         </div>

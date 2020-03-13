@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -35,12 +36,19 @@ namespace saru_ecommerce.Controllers
         }
         public IActionResult Create()
         {
-            return View();
+            UserViewModel userViewModel = new UserViewModel();
+
+            return View(userViewModel);
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Email,Cpf,BirthDate,Gender,Password,PhoneNumberPrimary,PhoneNumberSecondary")] User user)
+        public async Task<IActionResult> Create(UserViewModel userViewModel)
         {
+            UserViewModel u = userViewModel;
+
+            User user = userViewModel.user;
+            user.Adresses = new List<UserAddress>{userViewModel.address};
+
             if (ModelState.IsValid)
             {
                 _context.Add(user);
@@ -48,7 +56,7 @@ namespace saru_ecommerce.Controllers
                 var userId = user.UserId;
                 return RedirectToAction("Index", new { id = userId });
             }
-            return View(user);
+            return View(nameof(Index));
         }       
 
         public async Task<IActionResult> Details(int? id)

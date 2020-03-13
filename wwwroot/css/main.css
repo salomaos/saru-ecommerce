@@ -1,0 +1,53 @@
+.header-right {
+    float: right;
+}
+
+#search {
+    position: relative;
+    top: 3rem;
+}
+
+#search input {
+    width: 100%;
+}
+
+#search button {
+    margin-left: -42px;
+}
+
+.social-network {
+    font-size: 2.5rem;
+    padding-left: .5rem;
+    color: #ffc107;
+}
+
+.cart-icon {
+    font-size: 3rem;
+    color: #ffc107 !important;
+}
+
+header nav {
+    clear: both;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-weight: bold;
+    padding-right: 2rem;
+}
+
+footer .list-group-item {
+    border: none;
+}
+
+.list-group-item.active {
+    background-color: grey;
+    border-color: grey;
+}
+
+.cart_product_info {
+    font-size: 10px;
+}
+
+label {
+    margin-bottom: 0;
+}

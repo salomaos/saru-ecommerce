@@ -1,33 +1,62 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - saru_ecommerce</title>
+    <title>@ViewData["Title"] - SARU Cervejas</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/main.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                        <img class="w-75 pt-3" src="~/img/SARU.png" alt="Main Logo">
+                    </a>
+                </div>
+                <div class="col-6">
+                    <form id="search" class="form-inline" action="search">
+                        <input class="form-control" type="text" name="search" placeholder="Buscar">
+                        <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="col-3">
+                    <div class="header-right">
+                        <div class="row">
+                            <a class="social-network pr-3" href="facebook.com"><i class="fab fa-facebook-square"></i></a>
+                            <a class="social-network pr-3" href="twitter.com"><i class="fab fa-twitter-square"></i></a>
+                            <a class="social-network" href="instagram.com"><i class="fab fa-instagram-square"></i></a>
+                        </div>
+                        <div class="row justify-content-center">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Create">Login/Cadastrar</a>
+                        </div>
+                        <div class="row justify-content-center">
+                            <a class="cart-icon" href="cart.php"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">saru_ecommerce</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Create">User</a>
-                        </li>
-                    </ul>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav mx-auto">
+                        <a class="nav-item nav-link active" href="#">Promoções <span
+                                class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="#">Estilos</a>
+                        <a class="nav-item nav-link" href="#">Fabricantes</a>
+                        <a class="nav-item nav-link" href="#">Países</a>
+                        <a class="nav-item nav-link" href="#">Cervejarias</a>
+                        <a class="nav-item nav-link" href="#">Kits</a>
+                        <a class="nav-item nav-link" href="#">Copos & Taças</a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -37,15 +66,70 @@
             @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2020 - saru_ecommerce - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+<footer class="mt-5 mb-5">
+    <div class="container">
+        <div class="pt-4 pl-5 pr-5 bg-warning pt-3 justify-content-center rounded">
+            <p class="text-white bg-dark p-2 rounded text-center">Promoções, descontos, informações e novidades em primeira mão. Cadastre-se em nossa newsletter!</p>
+            <form action="#">
+                <div class="form-row">
+                    <div class="form-group col-5">
+                        <input class="form-control" type="text" name="name" id="name" placeholder="Nome Completo">
+                    </div>
+                    <div class="form-group col-5">
+                        <input class="form-control" type="email" name="email" id="email" placeholder="E-mail">
+                    </div>
+                    <div class="form-group col-2">
+                        <button class="btn btn-outline-dark btn-block" type="submit">Cadastrar</button>
+                    </div>
+                </div>
+            </form>
         </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @RenderSection("Scripts", required: false)
+        <div class="row mt-3">
+            <div class="col">
+                <h5>Central de atendimento</h5>
+                <div class="list-group">
+                    <a class="list-group-item list-group-item-action" href="#">FAQ</a>
+                    <a class="list-group-item list-group-item-action" href="#">Sobre nós</a>
+                    <a class="list-group-item list-group-item-action" href="#">Trocas e devoluções</a>
+                    <a class="list-group-item list-group-item-action" href="#">Política de frete</a>
+                    <a class="list-group-item list-group-item-action" href="#">Política de privacidade</a>
+                    <a class="list-group-item list-group-item-action" href="#">Termos e condições de usos</a>
+                </div>               
+            </div>
+            <div class="col">                
+                <h5>Fale conosco</h5>
+                <p class="mb-0">E-mail</p>
+                <p class="mb-0">Telefone</p>
+                <p class="mb-0">Horário</p>
+                <div class="row">
+                    <a class="social-network pr-3" href="facebook.com"><i class="fab fa-facebook-square"></i></a>
+                    <a class="social-network pr-3" href="twitter.com"><i class="fab fa-twitter-square"></i></a>
+                    <a class="social-network" href="instagram.com"><i class="fab fa-instagram-square"></i></a>
+                </div>
+            </div>
+            <div class="col">
+                <h5>Formas de pagamento</h5>
+                <img src="~/img/formas_pagamento.png" alt="">
+                <hr>
+                <h5>Certificados/Prêmios</h5>
+                <img src="~/img/certificados.png" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+</script>
+<script src="https://kit.fontawesome.com/d727604b14.js" crossorigin="anonymous"></script>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@RenderSection("Scripts", required: false)
 </body>
 </html>
